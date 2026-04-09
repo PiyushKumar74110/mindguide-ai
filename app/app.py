@@ -6,7 +6,7 @@ import pickle
 from src.preprocessing.preprocess import load_and_clean
 from src.features.feature_engineering import prepare_features
 from src.models.predict import predict_test
-from src.decision.decision_engine import decide_action
+from src.decision.decision_engine import decision_action
 from src.generation.response_generator import generate_response
 from sklearn.preprocessing import LabelEncoder
 
