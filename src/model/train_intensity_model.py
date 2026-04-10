@@ -1,13 +1,10 @@
 from xgboost import XGBRegressor
 
-def train_intensity_model(X_train, y_train):
+def train_intensity_model(X, y):
     model = XGBRegressor(
-        max_depth=4,
-        n_estimators=150,
-        learning_rate=0.1,
-        random_state=42
+        n_estimators=100,
+        max_depth=5,
+        learning_rate=0.1
     )
-
-    model.fit(X_train,y_train)
+    model.fit(X, y)
     return model
-    
