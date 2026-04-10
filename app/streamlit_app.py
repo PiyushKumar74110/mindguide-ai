@@ -123,18 +123,18 @@ if submit:
     
     st.markdown("---")
 
-    st.markdown("## 🧠 Emotional State")
+    st.markdown("## Emotional State")
     st.success(f"{pred_state} (Intensity: {pred_intensity:.2f})")
 
-    st.markdown("## 📊 Confidence")
+    st.markdown("## Confidence")
     st.progress(conf)
 
     if uncertain == 1:
-        st.warning("⚠️ Low confidence — reflect more.")
+        st.warning("Low confidence — reflect more.")
 
-    st.markdown("## 🧭 Recommendation")
+    st.markdown("## Recommendation")
     st.write(f"**Action:** {action}")
     st.write(f"**When:** {timing}")
 
-    st.markdown("## 💬 Guidance")
+    st.markdown("## Guidance")
     st.info(message)
