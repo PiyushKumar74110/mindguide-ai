@@ -15,7 +15,7 @@ import pickle
 
 from preprocessing.preprocess import load_and_clean
 from features.feature_engineering import prepare_features
-from models.predict import predict_test
+from model.predict import predict_test
 from decision.decision_engine import decide_action
 from generation.response_generator import generate_response
 
