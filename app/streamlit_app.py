@@ -1,21 +1,23 @@
 import sys
 import os
 
-# Fix import path
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if ROOT_DIR not in sys.path:
-    sys.path.insert(0, ROOT_DIR)
+SRC_DIR = os.path.join(ROOT_DIR, "src")
+
+sys.path.insert(0, ROOT_DIR)
+sys.path.insert(0, SRC_DIR)
+
 
 import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
 
-from src.preprocessing.preprocess import load_and_clean
-from src.features.feature_engineering import prepare_features
-from src.models.predict import predict_test
-from src.decision.decision_engine import decide_action
-from src.generation.response_generator import generate_response
+from preprocessing.preprocess import load_and_clean
+from features.feature_engineering import prepare_features
+from models.predict import predict_test
+from decision.decision_engine import decide_action
+from generation.response_generator import generate_response
 
 
 
