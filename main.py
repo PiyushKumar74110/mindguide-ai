@@ -1,7 +1,7 @@
 import argparse
 import subprocess
 from src.pipeline.run_pipeline import run_pipeline
-
+#main function
 def main(mode):
 
     if mode == "train":
